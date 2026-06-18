@@ -934,6 +934,10 @@
   </footer>
 
   <script>
+    /* ── Always start at top on reload ─────────────────────────── */
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+
     /* ── Nav: visible on hero, hides on scroll → circle menu ───── */
     var nav    = document.getElementById('nav');
     var navFab = document.getElementById('navFab');
