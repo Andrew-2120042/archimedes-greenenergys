@@ -433,14 +433,19 @@
       .nav-fab { top: 16px; right: 16px; }
 
       /* Hero */
-      .hero-wrap { height: 130vh; }
+      .hero-wrap { height: 115vh; }
+      .hero { background-position: 65% center; }
       .hero-content {
-        padding: 0 20px 36px;
-        flex-direction: column; align-items: flex-start; gap: 18px;
+        padding: 0 24px 44px;
+        flex-direction: column; align-items: flex-start; gap: 20px;
       }
-      .hero-h { font-size: clamp(28px, 8vw, 40px); }
-      .hero-right { max-width: 100%; text-align: left; align-items: flex-start; }
-      .hero-desc { font-size: 13px; }
+      .hero-h {
+        font-size: clamp(32px, 9vw, 44px);
+        max-width: 100%; letter-spacing: -0.028em;
+      }
+      .hero-right { max-width: 100%; align-items: flex-start; }
+      .hero-desc { display: none; }
+      .cta.light .cta-circle { width: 44px; height: 44px; }
 
       /* About */
       .about-inner { grid-template-columns: 1fr; }
